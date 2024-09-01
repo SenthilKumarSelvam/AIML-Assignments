@@ -151,7 +151,7 @@ hum vs. weathersit:
 
 ## Conclusions
 
-## Conclusion of the model -1 
+## Observation and Conclusion of Model 1 
 
 OLS Regression Results Summary
 
@@ -216,3 +216,299 @@ mnth_Sep - 1.38
 weathersit_snow - 1.25
 
 ## The model is effective but may need refinement due to some issues with residual normality.
+
+## Observation and Conclusion of Model 2
+
+OLS Regression Results Summary
+
+Model Fit:
+
+R-squared: 0.843 (84.3% of variance in cnt explained)
+
+Adjusted R-squared: 0.839 (Good fit, adjusted for predictors)
+
+F-statistic: 204.4 (Model is statistically significant, p < 0.0001)
+Key Predictors:
+
+
+temp: 0.5304 (Positive effect on cnt)
+
+hum: -0.1697 (Negative effect on cnt)
+
+windspeed: -0.1834 (Negative effect on cnt)
+
+season_spring: -0.0564 (Decrease in cnt compared to base season)
+
+season_winter: 0.0972 (Increase in cnt compared to base season)
+
+weathersit_mist: -0.0532 (Decrease in cnt under misty conditions)
+
+weathersit_snow: -0.2381 (Significant decrease in cnt under snowy conditions)
+
+Residuals: Not perfectly normal (Omnibus and Jarque-Bera tests significant)
+
+Condition Number: 19.6 (Indicating mild multicollinearity)
+
+VIF Results Summary
+
+High VIF Values (VIF > 10): Indicate severe multicollinearity. Consider removing or combining these features.
+
+hum - 28.03
+
+temp - 16.06
+
+Moderate VIF Values (5 ≤ VIF < 10): Indicate some multicollinearity. Review their impact but might be manageable.
+
+windspeed - 4.67
+
+season_spring - 4.03
+
+Low VIF Values (VIF < 5): Indicate low multicollinearity and are generally safe to include in the model.
+
+season_winter - 3.35
+
+season_summer - 2.79
+
+weathersit_mist - 2.28
+
+yr - 2.08
+
+mnth_Jul - 1.58
+
+mnth_Sep - 1.39
+
+weathersit_snow - 1.24
+
+weekday_Sat - 1.19
+
+holiday - 1.05
+
+## Model 2 demonstrates a strong fit, but there are concerns with multicollinearity, particularly for `hum` and `temp`.
+
+## Observation and Conclusion of Model 3
+
+OLS Regression Results Summary
+
+Model Fit:
+
+R-squared: 0.836 (83.6% of variance in cnt explained)
+
+Adjusted R-squared: 0.832 (Good fit, adjusted for predictors)
+
+F-statistic: 211.6 (Model is statistically significant, p < 0.0001)
+
+Key Predictors:
+
+temp: 0.4924 (Positive effect on cnt)
+
+windspeed: -0.1500 (Negative effect on cnt)
+
+season_spring: -0.0670 (Decrease in cnt compared to base season)
+
+season_winter: 0.0816 (Increase in cnt compared to base season)
+
+weathersit_mist: -0.0803 (Decrease in cnt under misty conditions)
+
+weathersit_snow: -0.2846 (Significant decrease in cnt under snowy conditions)
+
+Residuals: Not perfectly normal (Omnibus and Jarque-Bera tests significant)
+
+Condition Number: 17.4 (Indicating low multicollinearity)
+
+VIF Results Summary
+
+Moderate VIF Values (5 ≤ VIF < 10): Indicate some multicollinearity. Review their impact but might be manageable.
+
+temp - 5.12
+
+Low VIF Values (VIF < 5): Indicate low multicollinearity and are generally safe to include in the model.
+
+windspeed - 4.62
+
+season_summer - 2.23
+
+season_spring - 2.10
+
+yr - 2.07
+
+season_winter - 1.79
+
+mnth_Jul - 1.58
+
+weathersit_mist - 1.55
+
+mnth_Sep - 1.34
+
+weekday_Sat - 1.19
+
+weathersit_snow - 1.08
+
+holiday - 1.05
+
+## Model 3 is robust with low multicollinearity, but the normality of residuals remains a concern.
+
+## Observation and Conclusion of Model 4
+
+OLS Regression Results Summary
+
+Model Fit:
+
+R-squared: 0.833 (83.3% of variance in cnt explained)
+
+Adjusted R-squared: 0.829 (Good fit, adjusted for predictors)
+
+F-statistic: 226.1 (Model is statistically significant, p < 0.0001)
+
+Key Predictors:
+
+temp: 0.4509 (Positive effect on cnt)
+
+windspeed: -0.1415 (Negative effect on cnt)
+
+season_spring: -0.1124 (Significant decrease in cnt compared to base season)
+
+season_winter: 0.0445 (Increase in cnt compared to base season)
+
+weathersit_mist: -0.0797 (Decrease in cnt under misty conditions)
+
+weathersit_snow: -0.2859 (Significant decrease in cnt under snowy conditions)
+
+Residuals: Not perfectly normal (Omnibus and Jarque-Bera tests significant)
+
+Condition Number: 14.1 (Indicating low multicollinearity)
+
+VIF Results Summary
+
+Moderate VIF Values (5 ≤ VIF < 10): Indicate some multicollinearity. Review their impact but might be manageable.
+
+None
+
+Low VIF Values (VIF < 5): Indicate low multicollinearity and are generally safe to include in the model.
+
+temp - 4.64
+
+windspeed - 4.03
+
+yr - 2.06
+
+season_spring - 1.66
+
+weathersit_mist - 1.52
+
+season_winter - 1.40
+
+mnth_Jul - 1.35
+
+mnth_Sep - 1.20
+
+weekday_Sat - 1.19
+
+weathersit_snow - 1.08
+
+holiday - 1.05
+
+## Model 4 has a good fit with low multicollinearity but shows issues with residual normality.
+
+## Observation and Conclusion of Model 5
+
+OLS Regression Results Summary
+
+Model Fit:
+
+R-squared: 0.832 (83.2% of variance in cnt explained)
+
+Adjusted R-squared: 0.829 (Good fit, adjusted for predictors)
+
+F-statistic: 247.5 (Model is statistically significant, p < 0.0001)
+
+Key Predictors:
+
+temp: 0.4498 (Positive effect on cnt)
+
+windspeed: -0.1395 (Negative effect on cnt)
+
+season_spring: -0.1123 (Decrease in cnt compared to base season)
+
+season_winter: 0.0449 (Increase in cnt compared to base season)
+
+weathersit_mist: -0.0796 (Decrease in cnt under misty conditions)
+
+weathersit_snow: -0.2855 (Significant decrease in cnt under snowy conditions)
+
+Residuals: Not perfectly normal (Omnibus and Jarque-Bera tests significant)
+
+Condition Number: 14.0 (Indicating low multicollinearity)
+
+VIF Results Summary
+
+Moderate VIF Values (5 ≤ VIF < 10): Indicate some multicollinearity. Review their impact but might be manageable.
+
+None
+
+Low VIF Values (VIF < 5): Indicate low multicollinearity and are generally safe to include in the model.
+
+temp - 4.61
+
+windspeed - 4.00
+
+yr - 2.06
+
+season_spring - 1.64
+
+weathersit_mist - 1.52
+
+season_winter - 1.39
+
+mnth_Jul - 1.35
+
+mnth_Sep - 1.20
+
+weathersit_snow - 1.08
+
+holiday - 1.04
+
+## Model 5 is the VIFs and p-values both are within an acceptable range. So we go ahead and make our predictions using this model only.
+
+
+## Conclusions from Q-Q Plot
+
+Normality Check: Residuals are generally close to normal, as most points align with the red line.
+.
+Central Alignment: Residuals near the center are well-distributed.
+
+Tail Deviation: Residuals in the tails deviate from the line, indicating potential outliers or non-normality.
+
+Conclusion: Residuals are approximately normal with slight issues at the extremes.
+
+## Final Conclusion:
+
+We can see that the equation of our best fitted line is:
+
+cnt = 0.2531 + 0.2342 * yr - 0.0980 * holiday + 0.4498 * temp - 0.1395 * windspeed - 0.1123 * season_spring + 0.0449 * season_winter - 0.0729 * mnth_Jul + 0.0573 * mnth_Sep - 0.0796 * weathersit_mist - 0.2855 * weathersit_sow
+
+        Model Performance Metrics	Train Set	Test Set
+0	R-Squared Value	                0.83200	        0.7940
+1	Adjusted R-Squared Value	0.82900	        0.7829
+2	RMSE	                        0.09183	         0.1082
+
+## From the derived model, the following predictors are statistically significant. Therefore, the company should consider these predictor variables while preparing the bike rental strategy:
+
+yr
+
+holiday
+
+temp
+
+windspeed
+
+season_spring
+
+season_winter
+
+mnth_Jul
+
+mnth_Sep
+
+weathersit_mist
+
+weathersit_snow
