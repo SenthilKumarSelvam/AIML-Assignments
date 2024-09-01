@@ -150,3 +150,69 @@ hum vs. weathersit:
 
 
 ## Conclusions
+
+## Conclusion of the model -1 
+
+OLS Regression Results Summary
+
+Model Fit:
+
+R-squared: 0.847 (84.7% of variance in cnt explained)
+
+Adjusted R-squared: 0.843 (Good fit, adjusted for predictors)
+
+F-statistic: 195.7 (Model is statistically significant, p < 0.0001)
+
+Key Predictors:
+
+temp: 0.5277 (Positive effect on cnt)
+
+hum: -0.1611 (Negative effect on cnt)
+
+windspeed: -0.1809 (Negative effect on cnt)
+
+season_spring: -0.0555 (Decrease in cnt compared to base season)
+
+season_winter: 0.0992 (Increase in cnt compared to base season)
+
+Residuals: Not perfectly normal (Omnibus and Jarque-Bera tests significant)
+
+Condition Number: 25.2 (Mild multicollinearity)
+
+VIF Results Summary
+
+High VIF Values (VIF > 10): Indicate severe multicollinearity. Consider removing or combining these features.
+
+hum - 32.10
+
+temp - 18.99
+
+Moderate VIF Values (5 ≤ VIF < 10): Indicate some multicollinearity. Review their impact but might be manageable.
+
+workingday - 5.28
+
+windspeed - 4.91
+
+weekday_Sat - 4.91
+
+season_spring - 4.80
+
+weekday_Sun - 4.76
+
+Low VIF Values (VIF < 5): Indicate low multicollinearity and are generally safe to include in the model.
+
+season_winter - 3.69
+
+season_summer - 3.04
+
+weathersit_mist - 2.31
+
+yr - 2.09
+
+mnth_Jul - 1.60
+
+mnth_Sep - 1.38
+
+weathersit_snow - 1.25
+
+## The model is effective but may need refinement due to some issues with residual normality.
