@@ -3,7 +3,7 @@
 # Table of Contents
 * [General Info](#General-information)
 * [Technologies Used](#Technologies-used)
-* [Overview of Jupyter project](#Project file overview)
+* [Overview of Jupyter project](#Project-File-Overview)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
