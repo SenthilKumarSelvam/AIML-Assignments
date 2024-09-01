@@ -50,13 +50,66 @@ Conducts residual analysis and statistical tests.
 ## Data Understanding:
 ABOUT DATASET
 Column = 16 Variables and Rows = 730 as variable data.
-ABOUT DATASET VARIABLES
-instant, dteday, season, yr, mnth, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, casual, registered, cnt
+ABOUT DATASET VARIABLES : instant, dteday, season, yr, mnth, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, casual, registered, cnt
 Out of that 7 are Catagorical variables: season, yr, mnth, holiday, weekday, workingday, weathersit 
 Out of that 7 are Numerical variables: temp, atemp, hum, windspeed, casual, registered, cnt 
 Out of that 2 are non-value added variables: instant, dteday 
 
-ABOUT PAIRPLOT Understanding
+## ABOUT PAIRPLOT Understanding:
+temp vs. atemp:
+Observation: The variables temp and atemp appear to be the most correlated.
+Reference: This correlation is evident in both the scatter plot located in row 1, column 2 and its mirror plot in row 2, column 1.
+Understanding: Highly correlated.
+
+registered vs. cnt:
+Observation: The variables registered and cnt are highly correlated.
+Reference: This is visible in the plots located in row 6, column 7 and row 7, column 6.
+Understanding: Highly correlated.
+
+casual vs. cnt:
+Observation: A notable correlation exists between casual and cnt.
+Reference: This is observed in the scatter plots found in row 5, column 7 and row 7, column 5.
+Understanding: Correlated.
+
+casual vs. registered:
+Observation: There is a visible correlation between casual and registered.
+Reference: This can be seen in the plots in row 5, column 6 and row 6, column 5.
+Understanding: Correlated.ding**: correlated correlated with total counts.
+
+## ABOUT HEATMAP Understanding:
+temp vs. atemp:
+Correlation Coefficient: 0.99
+Understanding: These variables are almost perfectly corr.temp`.
+
+registered vs. cnt:
+Correlation Coefficient: 0.95
+UnderstThese variables areThere is a very strong positive c,and cnt, indicating that the number of registered users is a major contributor to the tot (cnt) of users.
+
+casual vs. cnt:
+Correlation Coefficient: 0.67
+UndThese variables are: There is a moderately strong positiualandcnt`, meaning that casual users also contribute significantly to the total count, though not as much as registered users.
+
+temp vs. cnt:
+Correlation Coefficient: 0.63
+These variables areding*: There is a moderate po, temp and cnt, indicating that higher temperatures generally lead to an increase in the total number of users.
+
+casual vs. registered:
+Correlation Coefficient: 0.39
+These variables arestanding**: There is a weak to moderansualandregistered`, which may suggest that days with more casual users tend to have more registered users as well, but the relationship is not as strong.
+
+workingday vs. casual:
+Correlation Coefficient: -0.52These variables arenderstanding**: There is a mod workingday and casual, indicating that there are fewer ca.e on weekends or holidays.
+
+temp vs. season:
+Correlation Coefficient: These variables are Understanding: There ion between temp and season, which is expected as temperature varies significantly with seasons.
+
+hum vs. weathersit:
+**Correlation CoefficientThese variables are - **Understandid weathersit (weather situation), suggesting that worse weather conditions tend to be more humid.
+
+General Insights:
+## High Correlations: temp vs. atemp, registered vs. cnt, and temp vs. season show the strongest positive correlations, indicating closely related variables.
+## Moderate Correlations: casual vs. cnt and hum vs. weathersit show moderate correlations, providing insights into user behavior patterns and weather influence.
+## Negative Correlations: The correlation between workingday and casual is negative, indicating that ronmental factors on bike-sharing usage.
 
 
 ## Conclusions
