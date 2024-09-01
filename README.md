@@ -3,6 +3,7 @@
 # Table of Contents
 * [General Info](#General-information)
 * [Technologies Used](#Technologies-used)
+* [Overview of Jupyter project](#Project file overview)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
@@ -30,17 +31,32 @@ This model will enable BoomBikes to:
 ## Technologies Used: 
 ## Python: 
 Primary language for data analysis and model development.
-## Jupyter Notebook: 
+## Jupyter Notebook (Version 4.0.11): 
 Provides an interactive environment for coding and documentation.
-## NumPy: 
+## NumPy (version 1.26.4): 
 Handles numerical computations and array operations.
-## Pandas: 
+## Pandas (version 2.2.2): 
 Manages data manipulation and analysis tasks.
-## Matplotlib & Seaborn: 
+## Matplotlib & Seaborn (version 0.13.2): 
 Creates visualizations for data exploration.
-## Statsmodels: 
+## Statsmodels (version 0.14.2): 
 Performs statistical modeling and regression analysis.
-## Scikit-learn: 
+## Scikit-learn (version 1.4.2): 
 Builds and evaluates the linear regression model.
-## SciPy: 
+## SciPy (version 1.13.1): 
 Conducts residual analysis and statistical tests.
+
+## Project file-Overview
+## Data Understanding:
+ABOUT DATASET
+Column = 16 Variables and Rows = 730 as variable data.
+ABOUT DATASET VARIABLES
+instant, dteday, season, yr, mnth, holiday, weekday, workingday, weathersit, temp, atemp, hum, windspeed, casual, registered, cnt
+Out of that 7 are Catagorical variables: season, yr, mnth, holiday, weekday, workingday, weathersit 
+Out of that 7 are Numerical variables: temp, atemp, hum, windspeed, casual, registered, cnt 
+Out of that 2 are non-value added variables: instant, dteday 
+
+ABOUT PAIRPLOT Understanding
+
+
+## Conclusions
