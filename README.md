@@ -1,9 +1,11 @@
 # Bike Sharing Assignment
 > Predicting Demand for Shared Bikes Using Multiple Linear Regression as per the given problem statement and business goal.
 # Table of Contents
-> [Problem Statement] (#Problem statement)
-> Business Goal
-> 
+* [General Info](#General-information)
+* [Technologies Used](#technologies-used)
+* [Conclusions](#conclusions)
+* [Acknowledgements](#acknowledgements)
+#General-information
 # Problem Statement
 A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
