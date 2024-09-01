@@ -2,7 +2,7 @@
 > Predicting Demand for Shared Bikes Using Multiple Linear Regression as per the given problem statement and business goal.
 # Table of Contents
 * [General Info](#General-information)
-* [Technologies Used](#technologies-used)
+* [Technologies Used](#Technologies-used)
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
@@ -27,3 +27,20 @@ This model will enable BoomBikes to:
         Adapt their business strategies to align with predicted demand.
         Enhance operational efficiency by optimizing bike availability across locations.
 
+## Technologies Used: 
+## Python: 
+Primary language for data analysis and model development.
+## Jupyter Notebook: 
+Provides an interactive environment for coding and documentation.
+## NumPy: 
+Handles numerical computations and array operations.
+## Pandas: 
+Manages data manipulation and analysis tasks.
+## Matplotlib & Seaborn: 
+Creates visualizations for data exploration.
+## Statsmodels: 
+Performs statistical modeling and regression analysis.
+## Scikit-learn: 
+Builds and evaluates the linear regression model.
+## SciPy: 
+Conducts residual analysis and statistical tests.
