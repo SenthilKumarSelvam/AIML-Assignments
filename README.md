@@ -5,7 +5,7 @@
 * [Technologies Used](#Technologies-used)
 * [Overview of Jupyter project](#Project-File-Overview)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
+* [contact](#contact)
 
 ## General Information:
 This project involves developing a linear regression model using Python to predict and understand the demand for shared bikes offered by BoomBikes, a US-based bike-sharing provider. The project is centered around analyzing various factors that influence bike demand to assist BoomBikes in making informed business decisions post-COVID-19.
@@ -512,3 +512,7 @@ mnth_Sep
 weathersit_mist
 
 weathersit_snow
+
+
+## Contact
+Created by Senthilkumar Selvam
